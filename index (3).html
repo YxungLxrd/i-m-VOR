@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            display: flex;
+            justify-content: center;
+        }
+        .frame{
+            width: 600px;  
+            height: 400px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: move 5s infinite linear;
+        }
+
+        @keyframes move{
+            0%{
+                transform: translateX(-1000px);
+            }
+            100%{
+                transform: translateX(1300px);
+            }
+        }
+
+        .kuzov{
+            width: 200px;
+            height: 70px;
+            background-color: brown;
+            position: fixed;
+            display: flex;
+        }
+        .fara{
+            width: 40px;
+            height: 20px;
+            background-color: yellow;
+
+        }
+        .krisha{
+            width: 100px;
+            height: 80px;
+            background-color: brown;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+        .kolesa{
+            display: flex;
+            gap: 80px;
+        }
+        .koleso{
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            border: 10px solid rgb(0, 0, 0);
+            background-color: grey;
+            margin-top: 70px;
+        }
+        .okno{
+            width: 70px;
+            height: 50px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="frame">
+            <div class="krisha"><div class="okno"></div></div>
+            <div class="kuzov"><div class="fara"></div></div>
+            <div class="kolesa">
+                <div class="koleso"></div>
+                <div class="koleso"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
